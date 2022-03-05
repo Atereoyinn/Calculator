@@ -1,38 +1,85 @@
-.App {
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  background-color: rgb(165, 143, 117);
+}
+h2 {
   text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  background:  rgb(51, 49, 49);
+  border-radius: 10px;
+}
+.input_pad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60,auto);
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bolder; 
+}
+input [type="text"] {
+  height: 240px;
+  width: 240px;
+  text-align: right;
+  background-color: gray;
+  border: 0px;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+button {
+  background-color: rgb(170, 155, 155);
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgba(2, 1, 1, 0.938);
+  border: none;
+  border-radius: 15px;
+  padding: 15px ;
 }
 
-.App-link {
-  color: #61dafb;
+#clr {
+  grid-column: 1/3;
+  grid-row: 1; 
+  color: rgb(55, 221, 221);
+  background-color: rgb(5, 5, 5);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#backspace{
+  color:rgb(55, 221, 221);
+  background-color: rgb(5, 5, 5);
+}
+#result {
+  grid-column: 3/5;
+  color:rgb(55, 221, 221);
+  background-color: rgb(5, 5, 5);
+}
+#divide{
+  color:rgb(55, 221, 221);
+  background-color: #050505;
+}
+#times{
+  color:rgb(55, 221, 221);
+  background-color: rgb(5, 5, 5);
+}
+#minus{
+  color:rgb(55, 221, 221);
+  background-color: rgb(5, 5, 5);
+}
+#plus{
+  color:rgb(55, 221, 221);
+  background-color: rgb(5, 5, 5);
 }
