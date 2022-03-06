@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 const Calculator = () => {
-
+    /* eslint no-eval: 0 */
     //Destrusturing props of useState
     const [results,setResult] = useState("");
     const clickHandler = (e) => {
